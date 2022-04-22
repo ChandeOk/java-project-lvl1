@@ -48,7 +48,8 @@ public class Calculator {
                 System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("'" + answer + "'" +  "is wrong answer ;(. Correct answer was " + "'" + result + "'.");
+                System.out.println("'" + answer + "'" +  "is wrong answer ;(. Correct answer was "
+                        + "'" + result + "'.");
                 System.out.println("Let's try again, " + game.getName());
                 break;
             }
