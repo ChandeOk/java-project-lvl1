@@ -15,7 +15,8 @@ public class Progression {
         int[] progression = new int[randomLength];
         final int progressionLimitMax = 49;
         int progressionLimit = (int) (1 + Math.random() * progressionLimitMax);
-        progression[0] = progressionLimit;
+        final int randomFirstNumLimit = 101;
+        progression[0] = (int) (Math.random() * randomFirstNumLimit);
         for (int i = 1; i < progression.length; i++) {
             progression[i] = progression[i - 1] + progressionLimit;
         }
