@@ -18,9 +18,9 @@ public class Calculator {
         int j = (int) (Math.random() * max);
         String stringExpression = "";
         switch (j) {
-            case 0: stringExpression = a + "*" + b; break;
-            case 1: stringExpression = a + "+" + b; break;
-            case 2: stringExpression = a + "-" + b; break;
+            case 0: stringExpression = a + " * " + b; break;
+            case 1: stringExpression = a + " + " + b; break;
+            case 2: stringExpression = a + " - " + b; break;
             default: break;
         }
         return stringExpression;
