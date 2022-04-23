@@ -44,7 +44,7 @@ public class Progression {
             } else {
                 System.out.println("'" + answer + "'" +  "is wrong answer ;(. Correct answer was "
                         + "'" + progression[rndIndexInProgression] + "'.");
-                System.out.println("Let's try again, " + game.getName());
+                System.out.println("Let's try again, " + game.getName() + "!");
                 return;
             }
             if (score == game.getScoreToWin()) {

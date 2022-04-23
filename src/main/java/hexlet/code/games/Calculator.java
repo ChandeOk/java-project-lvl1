@@ -50,7 +50,7 @@ public class Calculator {
             } else {
                 System.out.println("'" + answer + "'" +  "is wrong answer ;(. Correct answer was "
                         + "'" + result + "'.");
-                System.out.println("Let's try again, " + game.getName());
+                System.out.println("Let's try again, " + game.getName() + "!");
                 break;
             }
             if (score == game.getScoreToWin()) {

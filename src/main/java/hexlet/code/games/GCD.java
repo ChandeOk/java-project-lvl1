@@ -38,7 +38,7 @@ public class GCD {
             } else {
                 System.out.println("'" + answer + "'" +  "is wrong answer ;(. Correct answer was "
                         + "'" + correctAnswer + "'.");
-                System.out.println("Let's try again, " + game.getName());
+                System.out.println("Let's try again, " + game.getName() + "!");
                 break;
             }
             if (score == game.getScoreToWin()) {
