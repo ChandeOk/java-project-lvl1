@@ -1,6 +1,7 @@
 package hexlet.code;
 import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
+import hexlet.code.games.GCD;
 
 import java.util.Scanner;
 
@@ -13,6 +14,8 @@ public class App {
         final int even = 2;
         System.out.println("3 - Calculator");
         final int calculator = 3;
+        System.out.println("4 - GCD");
+        final int gcd = 4;
         System.out.println("0 - Exit");
         final int exit = 0;
         Scanner sc = new Scanner(System.in);
@@ -22,6 +25,7 @@ public class App {
             case exit: return;
             case even: Engine.hello(); Even.gameCondition(); Even.startEven(); break;
             case calculator: Engine.hello(); Calculator.gameCondition(); Calculator.startCalculator(); break;
+            case gcd: Engine.hello(); GCD.gameCondition(); GCD.startGCD(); break;
             default: System.out.println("Wrong number"); return;
         }
     }
