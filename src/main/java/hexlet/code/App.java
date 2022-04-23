@@ -2,6 +2,7 @@ package hexlet.code;
 import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
@@ -16,6 +17,8 @@ public class App {
         final int calculator = 3;
         System.out.println("4 - GCD");
         final int gcd = 4;
+        System.out.println("5 - Progression");
+        final int progression = 5;
         System.out.println("0 - Exit");
         final int exit = 0;
         Scanner sc = new Scanner(System.in);
@@ -26,6 +29,7 @@ public class App {
             case even: Engine.hello(); Even.gameCondition(); Even.startEven(); break;
             case calculator: Engine.hello(); Calculator.gameCondition(); Calculator.startCalculator(); break;
             case gcd: Engine.hello(); GCD.gameCondition(); GCD.startGCD(); break;
+            case progression: Engine.hello(); Progression.gameCondition(); Progression.startProgression(); break;
             default: System.out.println("Wrong number"); return;
         }
     }
